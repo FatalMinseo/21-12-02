@@ -6,40 +6,20 @@ public class PiggyBank {
 	int money;
 	Scanner sc = new Scanner(System.in);
 
-	// ÀÜ¾×
+	// ì”ì•¡
 	public PiggyBank(int money) {
 		this.money = money;
 	}
-	// ÀÔ±İ
+	// ì…ê¸ˆ
 	public void deposit(int inputMoney) {
 		money += inputMoney;
 	}
 
-	// Ãâ±İ
+	// ì¶œê¸ˆ
 	public void withdraw(int inputMoney) {
 		money -= inputMoney;
 	}
 	public void showMoney(int money) {
 		this.money=money ;
-	}
-	public void menu(int menu) {
-		if (menu == 1) {
-			System.out.print("ÀÔ±İ¾× : ");
-			int inputMoney = sc.nextInt();
-			deposit(inputMoney);
-			System.out.println("ÇöÀç ±İ¾× : " + money);
-		} else if (menu == 2) {
-			System.out.print("Ãâ±İ¾× : ");
-			int inputMoney = sc.nextInt();
-			withdraw(inputMoney);
-			System.out.println("ÇöÀç ±İ¾× : " + money);
-		} else if (menu == 3) {
-			System.out.println("ÇöÀç ±İ¾× : " + money);
-		} else if (menu == 4) {
-			System.out.println("ÇÁ·Î±×·¥ Á¾·á");
-		} else {
-			System.out.println("´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
-		}
-		System.out.println();
 	}
 }
